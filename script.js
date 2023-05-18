@@ -23,6 +23,46 @@ $(function () {
 
   //event listeners
 
+  saveBtn9.addEventListener('click', () => {
+  
+      document.getElementById('hour9Input').value
+    ;
+  })
+  saveBtn10.addEventListener('click', () => {
+    
+      document.getElementById('hour10Input').value
+    ;
+  })
+  saveBtn11.addEventListener('click', () => {
+      document.getElementById('hour11Input').value
+    ;
+  })
+  saveBtn12.addEventListener('click', () => {
+      document.getElementById('hour12Input').value
+    ;
+  })
+  saveBtn13.addEventListener('click', () => {
+      document.getElementById('hour13Input').value
+    ;
+  })
+  saveBtn14.addEventListener('click', () => {
+  
+      document.getElementById('hour14Input').value
+    ;
+  })
+  saveBtn15.addEventListener('click', () => {
+    
+      document.getElementById('hour15Input').value
+  ;
+  })
+  saveBtn16.addEventListener('click', () => {
+      document.getElementById('hour16Input').value
+    ;
+  })
+  saveBtn17.addEventListener('click', () => {
+      document.getElementById('hour17Input').value;
+  })
+
   //current day
   $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
 
@@ -34,17 +74,34 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
   for (var i = 9; i < 18; i++) {
-    // console.log($(`#hour-${i}`))
+
     if (i < dayjs().format("H")) {
       $(`#hour-${i}`).addClass("past");
     } else if (i > dayjs().format("H")) $(`#hour-${i}`).addClass("future");
     else if (i >= dayjs().format("H")) $(`#hour-${i}`).addClass("present");
   }
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
 });
 
+// TODO: Add code to get any user input that was saved in localStorage and set
+// the values of the corresponding textarea elements. HINT: How can the id
+// attribute of each time-block be used to do this?
+
+$('.time-block .saveBtn9').on('click', function() {
+  var textarea = $(this).closest('.time-block').find('textarea');
+  var key = $(this).closest('.time-block').attr('id');
+  var value = textarea.val();
+  localStorage.setItem(key, value);
+});
+
+$(document).ready(function() {
+  $('.time-block textarea').each(function() {
+    var key = $(this).closest('.time-block').attr('id');
+    var value = localStorage.getItem(key);
+    if (value) {
+      $(this).val(value);
+    }
+  });
+});
+//
 //extract id value, then the hour value
 //substring value from javascrips
