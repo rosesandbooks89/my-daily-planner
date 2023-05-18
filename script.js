@@ -11,24 +11,19 @@ $(function () {
   // useful when saving the description in local storage?
 
   //variables
-  // var saveBtn9 = document.getElementById("hour-9");
-  // var saveBtn10 = document.getElementById("hour-10");
-  // var saveBtn11 = document.getElementById("hour-11");
-  // var saveBtn12 = document.getElementById("hour-12");
-  // var saveBtn13 = document.getElementById("hour-13");
-  // var saveBtn14 = document.getElementById("hour-14");
-  // var saveBtn15 = document.getElementById("hour-15");
-  // var saveBtn16 = document.getElementById("hour-16");
-  // var saveBtn17 = document.getElementById("hour-17");
-
-  // var textarea = document.querySelectorAll(".textarea")
+  var saveBtn9 = document.getElementById("hour-9");
+  var saveBtn10 = document.getElementById("hour-10");
+  var saveBtn11 = document.getElementById("hour-11");
+  var saveBtn12 = document.getElementById("hour-12");
+  var saveBtn13 = document.getElementById("hour-13");
+  var saveBtn14 = document.getElementById("hour-14");
+  var saveBtn15 = document.getElementById("hour-15");
+  var saveBtn16 = document.getElementById("hour-16");
+  var saveBtn17 = document.getElementById("hour-17");
 
   //event listeners
-  
-  });
 
-
-  // TODO: Add code to display the current date in the header of the page.
+  //current day
   $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
 
   // TODO: Add code to apply the past, present, or future class to each time
@@ -37,6 +32,7 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   //
+  // TODO: Add code to display the current date in the header of the page.
   for (var i = 9; i < 18; i++) {
     // console.log($(`#hour-${i}`))
     if (i < dayjs().format("H")) {
@@ -47,6 +43,8 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
- 
-  
+  //
 });
+
+//extract id value, then the hour value
+//substring value from javascrips
