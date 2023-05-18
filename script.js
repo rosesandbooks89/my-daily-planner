@@ -24,10 +24,7 @@ $(function () {
   // var textarea = document.querySelectorAll(".textarea")
 
   //event listeners
-  $(".saveBtn").on("click", function () {
-    var time = $(this).parent().attr("id");
-    var eventText = $(this).siblings(".description").val();
-    localStorage.setItem(time, textarea);
+  
   });
 
 
