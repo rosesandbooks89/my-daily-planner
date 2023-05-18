@@ -11,19 +11,24 @@ $(function () {
   // useful when saving the description in local storage?
 
   //variables
-  var saveBtn9 = document.getElementById("hour-9");
-  var saveBtn10 = document.getElementById("hour-10");
-  var saveBtn11 = document.getElementById("hour-11");
-  var saveBtn12 = document.getElementById("hour-12");
-  var saveBtn13 = document.getElementById("hour-13");
-  var saveBtn14 = document.getElementById("hour-14");
-  var saveBtn15 = document.getElementById("hour-15");
-  var saveBtn16 = document.getElementById("hour-16");
-  var saveBtn17 = document.getElementById("hour-17");
+  // var saveBtn9 = document.getElementById("hour-9");
+  // var saveBtn10 = document.getElementById("hour-10");
+  // var saveBtn11 = document.getElementById("hour-11");
+  // var saveBtn12 = document.getElementById("hour-12");
+  // var saveBtn13 = document.getElementById("hour-13");
+  // var saveBtn14 = document.getElementById("hour-14");
+  // var saveBtn15 = document.getElementById("hour-15");
+  // var saveBtn16 = document.getElementById("hour-16");
+  // var saveBtn17 = document.getElementById("hour-17");
 
-  var textarea = document.querySelectorAll(".textarea")
+  // var textarea = document.querySelectorAll(".textarea")
 
   //event listeners
+  $(".saveBtn").on("click", function () {
+    var time = $(this).parent().attr("id");
+    var eventText = $(this).siblings(".description").val();
+    localStorage.setItem(time, textarea);
+  });
 
 
   // TODO: Add code to display the current date in the header of the page.
@@ -45,7 +50,6 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
+ 
+  
 });
-
-
