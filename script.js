@@ -1,14 +1,12 @@
 $(function () {
-  //current day
   // code to display the current date in the header of the page.
-  $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
+  $("#currentDay").text(dayjs().format("MMMM D, YYYY h:mm A"));
 
   for (var i = 9; i < 18; i++) {
     if (i < dayjs().format("H")) {
-      $(`#hour-${i}`).addClass("past");
+      $(`#hour-${i}`).children(".hour").addClass("past");
     } else if (i > dayjs().format("H")) $(`#hour-${i}`).addClass("future");
-        else if (i >= dayjs().format("H")) $(`#hour-${i}`).addClass("present");
-          else if (i != dayjs().format("H")) $(`#hour-${i}`).addClass("future");
+    else if (i >= dayjs().format("H")) $(`#hour-${i}`).addClass("present");
   }
 });
 //code for local storage saving
@@ -28,6 +26,3 @@ $(document).ready(function () {
     }
   });
 });
-//
-//extract id value, then the hour value
-//substring value from javascrips

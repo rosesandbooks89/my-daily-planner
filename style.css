@@ -1,9 +1,18 @@
-h1 , p {
+h1,
+p {
   display: flex;
   justify-content: center;
-  color:  #6fe7bd;
+  color: #6fbbe7;
   font-family: cursive;
-
+}
+h2,
+h3,
+h4 {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  text-shadow: 2px 2px 2px black;
+  font-size: medium;
 }
 body {
   font-family: cursive;
@@ -13,21 +22,20 @@ body {
   color: #ffffff;
 }
 
-.timeblocks{
+.timeblocks {
   height: 400px;
-
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: 	#F88379;
-  text-shadow: 2px 2px 2px black;
+  color: #f88379;
+  text-shadow: 2px 2px 2px #000000;
   font-size: xx-large;
   /* border-left: 1px solid black; */
   padding: 10px;
-  
+  text-align: center;
 }
 
 .description {
@@ -50,22 +58,21 @@ textarea {
 }
 
 .past {
-  background-color: transparent;
-  color: white;
+  background-color: #c0657c;
+  color: black;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: #65c070;
+  color: black;
 }
 
 .future {
-  background-color: #f4fa4a;
-  color: white;
+  background-color: #6865c0;
+  color: black;
 }
 
 .saveBtn {
-  /* border-left: 1px solid black; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #828f52;
