@@ -8,7 +8,7 @@ $(function () {
       $(`#hour-${i}`).addClass("past");
     } else if (i > dayjs().format("H")) $(`#hour-${i}`).addClass("future");
         else if (i >= dayjs().format("H")) $(`#hour-${i}`).addClass("present");
-          else if (i <= dayjs().format("H")) $(`#hour-${i}`).addClass("future");
+          else if (i != dayjs().format("H")) $(`#hour-${i}`).addClass("future");
   }
 });
 //code for local storage saving
