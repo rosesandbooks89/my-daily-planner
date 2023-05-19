@@ -5,8 +5,8 @@ $(function () {
   for (var i = 9; i < 18; i++) {
     if (i < dayjs().format("H")) {
       $(`#hour-${i}`).children(".hour").addClass("past");
-    } else if (i > dayjs().format("H")) $(`#hour-${i}`).addClass("future");
-    else if (i >= dayjs().format("H")) $(`#hour-${i}`).addClass("present");
+    } else if (i > dayjs().format("H")) $(`#hour-${i}`).children(".hour").addClass("future");
+    else if (i >= dayjs().format("H")) $(`#hour-${i}`).children(".hour").addClass("present");
   }
 });
 //code for local storage saving
