@@ -1,15 +1,33 @@
+h1 , p {
+  display: flex;
+  justify-content: center;
+  color:  #6fe7bd;
+  font-family: cursive;
+
+}
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: cursive;
   font-size: 16px;
+  background-image: url(./Assets/Images/pexels-pixabay-355235.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.timeblocks{
+  height: 400px;
+
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: 	#F88379;
+  text-shadow: 2px 2px 2px black;
+  font-size: xx-large;
+  /* border-left: 1px solid black; */
   padding: 10px;
+  
 }
 
 .description {
@@ -25,13 +43,14 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #b9a3ce;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed #ffffff;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: transparent;
   color: white;
 }
 
@@ -46,10 +65,10 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #828f52;
   color: white;
 }
 
