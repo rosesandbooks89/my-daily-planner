@@ -25,7 +25,7 @@ I used the [Day.js](https://day.js.org/en/) library to work with date and time.
 ## Struggles
 This weeks assignment proved to be very difficult for creating the loops that was needed to create the color change me but i made it with the help of my tutor and BCS assisstants. The understanding of "why" each fucntion works the way that it does not 100% there but I will get there.  
 
-## Additional Note
+## Additional Notes
 * HTML contains an extra block for testing color change when outside working hours
 * Header contains a legend for what colors represent past,present,futrure.
 
